@@ -4,11 +4,6 @@ define(function(require){
   var newLocation = {
     location: "Moon",
     location_type: "Out-of-this World",
-    reviews: {
-      date: 0,
-      title: "",
-      text: ""
-    },
     imgurl: "",
     visited: false
   };
@@ -24,9 +19,6 @@ define(function(require){
   $("#submit").on("click", function(){
     newLocation.location = $('#place').val();
     newLocation.location_type = $('#type').val();
-    newLocation.reviews.date = $('#reviewDate').val();
-    newLocation.reviews.title = $('#reviewTitle').val();
-    newLocation.reviews.text = $('#reviewText').val();
     newLocation.imgurl = $('#imgurl').val();
 
 

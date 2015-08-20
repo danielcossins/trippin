@@ -8,10 +8,35 @@ define(function(require){
     var trips = snapshot.val();
     console.log(trips);
 
+    var tripsArray=[];
+     // Convert Firebase's object of objects into an array of objects
+    for (var key in trips) {
+      tripsArray[tripsArray.length] = trips[key];
+    }
+    console.log(tripsArray);
+
     console.log(templates);
 
+    var visitedTrips = [];
+    var wishlistTrips = [];
 
-    var populateTemplate = templates.tripTpl(trips);
-    $("#list-of-trips").html(populateTemplate);
+    for(var i=0; i<tripsArray.length; i++){
+      if(tripsArray[i].visited===false){
+        wishlistTrips.push(tripsArray[i]);
+      }
+      else{
+        visitedTrips.push(tripsArray[i]);
+      }
+    }
+
+    console.log(wishlistTrips);
+    console.log(visitedTrips);
+
+
+    var populateTemplate = templates.tripTpl(wishlistTrips);
+    $("#list-of-wishlist").html(populateTemplate);
+
+    populateTemplate = templates.tripTpl(visitedTrips);
+    $("#list-of-visited").html(populateTemplate);
   });
 });
