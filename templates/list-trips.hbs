@@ -1,9 +1,22 @@
 {{#each this}}
-  <div>
-    {{location}}
+  <div class="place">
+    <h3>{{location}}</h3>
+    <img src={{imgurl}} width="300px">
     <br>
+    <h4>{{location_type}}</h4>
+    <br>
+    <h4>Visited: {{visited}}</h5>
+    <h5>Reviews: </h5>
     {{#each reviews}}
+    <div class="review">
       <span>{{title}}</span> | <span>{{date}}</span>
+      <br>
+      <p>
+        {{text}}
+      </p>
+    </div>
     {{/each}}
+
+    <button id="add-review#{{@key}}">Add a review</button>
   </div>
 {{/each}}

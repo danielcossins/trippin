@@ -9,6 +9,7 @@ define(function(require){
       title: "",
       text: ""
     },
+    imgurl: "",
     visited: false
   };
 
@@ -26,6 +27,7 @@ define(function(require){
     newLocation.reviews.date = $('#reviewDate').val();
     newLocation.reviews.title = $('#reviewTitle').val();
     newLocation.reviews.text = $('#reviewText').val();
+    newLocation.imgurl = $('#imgurl').val();
 
 
     $.ajax({

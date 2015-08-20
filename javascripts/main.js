@@ -14,6 +14,6 @@ requirejs.config({
   }
 });
 
-requirejs(["dependencies", "load-data", "save-data"], function(dependencies, loadData, saveData){
+requirejs(["dependencies", "load-data", "save-data", "reviews"], function(dependencies, loadData, saveData, reviews){
   
 });

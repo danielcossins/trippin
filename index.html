@@ -15,11 +15,13 @@
   <br>
 
 
-  <form>
+  <form class="form-group">
+    <h3>Add a place</h3>
     <input id="place" type="text" placeholder="the place"><br>
     <select id="type">
       <option>First World</option>
       <option>Third World</option>
+      <option>Out-of-this World</option>
     </select><br>
     <!-- <select id="type">
       <option>true</option>
@@ -29,15 +31,42 @@
       <button id="visited" type="button" class="btn btn-default">Visited</button>
       <button id="wish-list" type="button" class="btn btn-default">Wishlist</button>
     </div><br>
-    <label>Review</label><br>
-    <input id="reviewTitle" type="text" placeholder="Title"><br>
-    <textarea id="reviewText" placeholder="write a review"></textarea><br>
-    <input id="reviewDate" type="number" placeholder="the date"><br>
+    <input type="text" id="imgurl" placeholder="Image url"><br>
+    <br>
+
 
     <button id="submit" type="button">Add a place</button>
   </form>
-    
 
+  <div class="review-entry">
+    <label>Review</label><br>
+    <input id="reviewTitle" type="text" placeholder="Title"><br>
+    <textarea id="reviewText" placeholder="write a review"></textarea><br>
+    <input id="reviewDate" type="text" placeholder="the date"><br>
+    <button type="button" id="submitReview">Submit Review</button>
+  </div>
+
+<!-- <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputFile">File input</label>
+    <input type="file" id="exampleInputFile">
+    <p class="help-block">Example block-level help text here.</p>
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form> -->
 
 
 
