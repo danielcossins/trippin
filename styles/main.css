@@ -13,6 +13,18 @@ form {
 .review {
   margin: 5px;
   background-color: lightyellow;
-  font-family: Comic Sans MS; }
+  font-family: Comic Sans MS;
+  padding: 5px;
+  border-radius: 20px; }
+
+.review-entry {
+  border-top: 5px solid black; }
+
+.placesButton {
+  margin: 6px; }
+
+img {
+  border-radius: 20px;
+  margin: 10px; }
 
 /*# sourceMappingURL=main.css.map */
